@@ -18,11 +18,11 @@ Here are some ideas to get you started:
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/deffz-finesse/deffz-finesse/github-breakout/images/breakout-custom.svg"
+    srcset="https://raw.githubusercontent.com/deffz-finesse/deffz-finesse/github-breakout/images/breakout-dark.svg"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/deffz-finesse/deffz-finesse/github-breakout/images/breakout-custom.svg"
+    srcset="https://raw.githubusercontent.com/deffz-finesse/deffz-finesse/github-breakout/images/breakout-light.svg"
   />
-  <img alt="GitHub Breakout Game" src="https://raw.githubusercontent.com/deffz-finesse/deffz-finesse/github-breakout/images/breakout-custom.svg" />
+  <img alt="GitHub Breakout Game" src="https://raw.githubusercontent.com/deffz-finesse/deffz-finesse/github-breakout/images/breakout-light.svg" />
 </picture>
