@@ -16,20 +16,27 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate SVG
+      - name: Generate SVG (custom colors)
         uses: cyprieng/github-breakout@v1
         with:
           github_username: deffz-finesse
           enable_ghost_bricks: true
-          paddle_color: "#2196F3"   # light blue
-          ball_color: "#1F6FEB"     # GitHub blue
+          paddle_color: "#2196F3"
+          ball_color: "#1F6FEB"
           bricks_colors: "#161B22,#0E4429,#006D32,#26A641,#39D353"
+
+      - name: Generate SVG (dark mode)
+        uses: cyprieng/github-breakout@v1
+        with:
+          github_username: deffz-finesse
+          enable_ghost_bricks: true
 
       - name: Move generated SVGs to temp
         run: |
           mkdir -p /tmp/breakout-images
           mv output/light.svg /tmp/breakout-images/breakout-light.svg
           mv output/dark.svg /tmp/breakout-images/breakout-dark.svg
+          mv output/custom.svg /tmp/breakout-images/breakout-custom.svg
 
       - name: Configure git
         run: |
