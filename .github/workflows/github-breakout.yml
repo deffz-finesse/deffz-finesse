@@ -20,7 +20,7 @@ jobs:
         uses: cyprieng/github-breakout@v1
         with:
           github_username: deffz-finesse
-          enable_ghost_bricks: true
+          enable_ghost_bricks: false
           paddle_color: "#2196F3"
           ball_color: "#1F6FEB"
           bricks_colors: "#161B22,#0E4429,#006D32,#26A641,#39D353"
